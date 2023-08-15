@@ -9,14 +9,16 @@ import org.springframework.stereotype.Service;
 public class UserService extends CommonService {
 
     private static final String URL_SEND_MESSAGE = "https://mbasic.facebook.com/messages/read/?fbid=";
-    private static final String USERNAME = "";
-    private static final String PASSWORD = "";
+    private static final String USERNAME = "0388765475";
+    private static final String PASSWORD = "01237525708";
 
     public void sendMessage(String msg, String userId) {
+
+
         WebDriver webDriver = initDriver();
         login(webDriver);
         sleep(1000l);
-        String url = URL_SEND_MESSAGE + userId;
+        String url = URL_SEND_MESSAGE + "100006028390798";
         webDriver.get(url);
         sleep(1000l);
         webDriver.findElement(By.xpath("//*[@id=\"composerInput\"]")).sendKeys(msg);

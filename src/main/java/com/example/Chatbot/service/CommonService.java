@@ -12,7 +12,7 @@ public class CommonService {
     protected WebDriver initDriver() {
 
         //version là version chrome trên máy của bạn
-        WebDriverManager.chromedriver().version("114.0.5735.133").setup();
+        WebDriverManager.chromedriver().version("114.0.5735.90").setup();
         File profile = new File("src/main/resources/profile");
         ChromeOptions options = new ChromeOptions();
         //options.addArguments("--headless");
